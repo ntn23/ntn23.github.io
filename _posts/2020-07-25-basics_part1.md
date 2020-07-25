@@ -41,15 +41,15 @@ So let's solve it step by step
   
 ### Getting a count of all possible 2 letter endings
 
-Now we can use sed to get last 2 characters for all words using pipe with the output of our previous result. `sed` works by taking a `{{regex}}` and replacing it with `{{replace}}` string
+Now we can use sed to get last 2 characters for all words using pipe with the output of our previous result. `sed` works by taking a `regex` and replacing it with `replace` string
 
-> `sed 's/{{regex}}/{{replace}}/'`
+> `sed 's/regex/replace/'`
 
 So for our purposes we need to extract (capture) last 2 characters of all words. Regex to rescue again!
 
 > `sed -E 's/(.*)(.{2})$/\2/'`
 
-It is essentially doing 2 things - capturing 2 groups (as defined in regex inside `()` and replacing match with second one (specidifed using `\2`)
+It is essentially doing 2 things - capturing 2 groups (as defined in regex inside `()` and replacing match with second one (specified using `\2`)
 
 Post this our job is easy we can accumulate and sort to find most common 2 character endings using `sort`, `uniq` and `head` (for top 10 results)
 
