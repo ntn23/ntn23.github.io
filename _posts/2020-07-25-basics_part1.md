@@ -20,7 +20,7 @@ So let's solve it step by step
 - Pipe operator (`|`) can be used to "feed" output of one command to another. Ex: `echo "Hello World" | wc -m`. echo outputs Hello World which is used by wc (word count) to calculate length
 - Regex Basics
   - `*` use for matching 0 or more repetitions
-  - `.` use for mathcing a single character (any character)
+  - `.` use for matching a single character (any character)
   - `()` use these to denote capturing groups
 - `sed` Stream editor
   - Takes in input explicit or through a pipe and can edit it based on criteria defined ([More here](https://tldr.ostera.io/sed))
