@@ -57,4 +57,18 @@ Final result:
 
 > `ggrep -Pio '(?!.*s).*a.*a.*a.*$' /usr/share/dict/words | sed -E 's/(.*)(.{2})$/\2/' | sort | uniq -c | sort -r | head -n10`
 
+Output:
+
+ > `786 al`
+ > `610 an`
+ > `597 ia`
+ > `529 ae`
+ > `219 on`
+ > `204 te`
+ > `200 ly`
+ > `168 ta`
+ > `148 ic`
+ > `146 ra`
+
+
 That's all folks!
