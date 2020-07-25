@@ -7,7 +7,7 @@
 # https://learnxinyminutes.com/docs/yaml/
 
 title: Learning to learn
-description: Try to blog my learning experience (mostly tech) ❤
+description: Trying to blog my learning experience (mostly tech) ❤
 github_username: ntn23
 
 # Email and twitter are optional:
@@ -18,7 +18,7 @@ twitter_username:
 use_math: true
 
 # Add your Google Analytics ID here if you have one and want to use it
-google_analytics:
+google_analytics: UA-173526667-1
 
 # Everything below here can be ignored, unless you want to change the theme entirely
 theme: minima
