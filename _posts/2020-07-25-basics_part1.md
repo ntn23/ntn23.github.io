@@ -30,7 +30,7 @@ So let's solve it step by step
   
   This is the part that took me the most time. So I arrived at below regex
   
-  > (?!.*s).*a.*a.*a.*$
+  > `(?!.*s).*a.*a.*a.*$`
   
   - `(?!.*s)` allows us to do a negative lookahead for `.*s`. (Since we don't want words ending with `s`)
   - Rest just enforces a minimum of 3 a's anywhere in the word
